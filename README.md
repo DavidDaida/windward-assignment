@@ -52,69 +52,15 @@ cd ..
 cd client
 npm install
 cd ..
-How to Start
-Start the project from the project root:
 
-bash
-Copy code
+cd windward-assignment
+---
+
+## How to Start
+
+Start the project from the **project root**:
+
+```bash
 cd windward-assignment
 npm start
-This command launches both the server and client together.
 
-Server runs at: http://localhost:5001
-
-Client runs at: http://localhost:5173
-
-You can test the server with a health check endpoint:
-
-bash
-Copy code
-http://localhost:5001/api/health
-Expected response:
-
-json
-Copy code
-{ "ok": true }
-Usage
-Open the client UI → http://localhost:5173
-You will see a fleets table (sortable).
-
-Click on a fleet row → you’ll be taken to the Fleet Page, which shows:
-
-A table of vessels (sortable by any column).
-
-A search bar (filter by name, flag, MMSI — with AND logic).
-
-An interactive map with vessel positions and details in popups.
-
-Use the search fields to filter vessels. Both the table and map update immediately.
-
-Development Notes
-If port 5001 is already in use, change it in server/src/index.js and update client/vite.config.js.
-
-JSON data lives in server/data/.
-
-Data is stored entirely in memory — no database setup required.
-
-You can run server and client separately for debugging:
-
-In one terminal:
-
-bash
-Copy code
-cd server
-npm run dev
-In another terminal:
-
-bash
-Copy code
-cd client
-npm run dev
-Author
-David Daida
-Technical Support Engineer Assignment
-
-pgsql
-Copy code
-
----
