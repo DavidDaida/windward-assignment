@@ -52,33 +52,3 @@ cd ..
 cd client
 npm install
 cd ..
-
-## How to Start
-
-From the project root (windward-assignment/):
-
-npm start
-
-
-This will start both server and client in parallel:
-
-Server API → http://localhost:5001
-
-Client UI → http://localhost:5173
-
-Health check (server):
-http://localhost:5001/api/health
- → returns { "ok": true }
-
-Development Notes
-
-If port 5001 is already in use, change it in server/src/index.js and update client/vite.config.js accordingly.
-
-JSON data lives in server/data/.
-
-Data is stored in memory — no database required.
-
-Author
-
-David Daida
-Technical Support Engineer Assignment
