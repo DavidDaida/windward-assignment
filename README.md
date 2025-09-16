@@ -57,12 +57,13 @@ cd windward-assignment
 
 ---
 
-**## How to Start**
+#  How to Start
 
 Start the project from the **project root**:
 
 ```bash
 cd windward-assignment
 npm start
+
 
 
