@@ -1,0 +1,11 @@
+{
+    "name": "windward-assignment",
+    "private": true,
+    "scripts": {
+      "start": "concurrently -k -n server,client -c blue,green \"npm run dev --prefix server\" \"npm run dev --prefix client\""
+    },
+    "devDependencies": {
+      "concurrently": "^8.2.2"
+    }
+  }
+  
