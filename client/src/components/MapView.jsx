@@ -5,7 +5,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import 'leaflet-defaulticon-compatibility'
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css'
 
-// Center at Indian Ocean-ish; will auto-fit later if you want
+// Center at Indian Ocean-ish;
 const DEFAULT_CENTER = [7.0, 80.0]
 const DEFAULT_ZOOM = 4
 
@@ -16,7 +16,6 @@ export default function MapView({ vessels }) {
     <div style={{ height: 420, width: '100%' }}>
       <MapContainer center={DEFAULT_CENTER} zoom={DEFAULT_ZOOM} style={{ height: '100%', width: '100%' }}>
         <TileLayer
-          // OpenStreetMap tiles (free)
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&copy; OpenStreetMap contributors"
         />
